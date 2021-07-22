@@ -22,7 +22,7 @@ impl Environment for NicesEnvironment {
     type Hash = <ink_env::DefaultEnvironment as Environment>::Hash;
     type Timestamp = <ink_env::DefaultEnvironment as Environment>::Timestamp;
     type BlockNumber = <ink_env::DefaultEnvironment as Environment>::BlockNumber;
-    type ChainExtension = dyn NicesExt;
+    type ChainExtension = NicesExt;
 
     type RentFraction = <ink_env::DefaultEnvironment as Environment>::RentFraction;
 }
