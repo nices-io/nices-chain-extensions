@@ -18,8 +18,8 @@ mod contract {
         }
 
         #[ink(message)]
-        pub fn random_number(&self, max: u32) -> u32 {
-            self.env().extension().random_number(max)
+        pub fn next_u32(&self, max: u32) -> u32 {
+            self.env().extension().next_u32(max)
         }
     }
 }
